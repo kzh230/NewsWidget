@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BREAKING NEWS"
+            android:textColor="#D97757"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+        <!-- Original Colour #888888 -->
+
+        <!-- 갱신 시간 -->
+        <TextView
+            android:id="@+id/text_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="터치하여 새로고침"
+            android:textColor="#888888"
+            android:textSize="10sp"
+            android:textStyle="normal"/>
+        <!-- Original Colour #555555 -->
+
+        <!-- 구글 뉴스 앱을 열어주는 전용 버튼 -->
+        <TextView
+            android:id="@+id/btn_open_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뉴스 보기 >"
+            android:textColor="#1A73E8"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp" />
+        <!-- Green Colour #03C75A / Size 10 -->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_news_headline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="뉴스를 불러오는 중..."
+        android:textColor="#F8F8F8"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    <!-- Original Colour #FFFFFF -->
+
+</LinearLayout>

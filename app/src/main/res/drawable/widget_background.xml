@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 배경 색상: 검은색 -->
+    <solid android:color="#222222" />
+
+    <!-- 모서리 둥글기 (숫자를 20dp, 24dp 등으로 올릴수록 더 둥글어집니다) -->
+    <corners android:radius="16dp" />
+
+</shape>
