@@ -17,7 +17,6 @@ News Widget for Android
 3. 구글 뉴스 앱을 설치하면 더 깔끔합니다(웹브라우저는 뉴스마다 새창이 열림, 물론 설치 안해도 됩니다).
 4. 뉴스 목록은 15분 간격으로 구글 뉴스 홈에서 받아 리셋됩니다.
 5. 배경색 변경이나 투명도 조정은 아직 안됩니다(추후 업데이트 예정).
-6. 원하지 않는 언론사는 제외했습니다(조O일보 등 ^_^).
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)<br>
