@@ -3,9 +3,9 @@
     android:shape="rectangle">
 
     <!-- 배경 색상: 검은색 -->
-    <solid android:color="#222222" />
+    <solid android:color="#232323" />
 
     <!-- 모서리 둥글기 (숫자를 20dp, 24dp 등으로 올릴수록 더 둥글어집니다) -->
-    <corners android:radius="16dp" />
+    <corners android:radius="18dp" />
 
 </shape>

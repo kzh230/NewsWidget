@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/widget_background"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="15dp">
+    <!-- padding(안 여백) 초기값은 16 -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,6 +14,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
+        <!-- 타이틀 -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -31,10 +33,10 @@
             android:text="터치하여 새로고침"
             android:textColor="#888888"
             android:textSize="10sp"
-            android:textStyle="normal"/>
-        <!-- Original Colour #555555 -->
+            android:textStyle="normal" />
+        <!-- 초기값 Colour #555555 -->
 
-        <!-- 구글 뉴스 앱을 열어주는 전용 버튼 -->
+        <!-- 구글 뉴스 앱을 열어주는 버튼 -->
         <TextView
             android:id="@+id/btn_open_news"
             android:layout_width="wrap_content"
@@ -47,10 +49,11 @@
             android:paddingEnd="8dp"
             android:paddingTop="2dp"
             android:paddingBottom="2dp" />
-        <!-- Green Colour #03C75A / Size 10 -->
+        <!-- 초기값 Size 10 -->
 
     </LinearLayout>
 
+    <!-- 뉴스 본문 -->
     <TextView
         android:id="@+id/text_news_headline"
         android:layout_width="match_parent"
@@ -62,6 +65,6 @@
         android:textColor="#F8F8F8"
         android:textSize="16sp"
         android:textStyle="normal" />
-    <!-- Original Colour #FFFFFF -->
+    <!-- 초기값 Colour #FFFFFF -->
 
 </LinearLayout>
