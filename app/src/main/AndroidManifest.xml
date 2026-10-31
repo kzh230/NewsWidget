@@ -21,7 +21,24 @@
             </intent-filter>
         </activity>
 
-        <!-- 2. [추가] 위젯 등록 리시버 (activity 태그 아래에 넣기) -->
+        <!-- 새롭게 추가된 기능 -->
+        <receiver
+            android:name=".NewsWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.newswidget.ACTION_REFRESH" />
+                <!-- 1분 화면 넘김용 액션 -->
+                <action android:name="com.example.newswidget.ACTION_ROTATE" />
+                <!-- 슬립에서 화면 깰 때(잠금해제) 감지용 액션 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/news_widget_info" />
+        </receiver>
+
+        <!-- 2. [추가] 위젯 등록 리시버 (activity 태그 아래에 넣기) - 이하 구 버전임
         <receiver
             android:name=".NewsWidgetProvider"
             android:exported="true">
@@ -33,6 +50,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/news_widget_info" />
         </receiver>
+        -->
 
     </application>
 </manifest>

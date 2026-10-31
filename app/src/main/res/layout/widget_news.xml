@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="뉴스 보기 >"
             android:textColor="#1A73E8"
-            android:textSize="11sp"
+            android:textSize="12sp"
             android:textStyle="bold"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"

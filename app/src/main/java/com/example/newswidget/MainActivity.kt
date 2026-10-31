@@ -1,4 +1,4 @@
-package com.example.newswidget // <-- 본인 패키지명 확인
+package com.example.newswidget // 패키지명 확인
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

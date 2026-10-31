@@ -1,6 +1,7 @@
-package com.example.newswidget // <-- 본인 패키지명이 com.example.xxx 라면 그 이름으로 맞춰주세요!
+package com.example.newswidget // 패키지명 확인
 
 import android.content.Context
+import android.content.Intent
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 
@@ -10,8 +11,12 @@ class NewsUpdateWorker(
 ) : CoroutineWorker(context, workerParams) {
 
     override suspend fun doWork(): Result {
-        // 15분 주기로 깨어나 모든 위젯 화면을 최신 뉴스로 갱신
-        NewsWidgetProvider.updateAllWidgets(context)
+        // 사라진 함수 대신 위젯에 "새로고침 신호(ACTION_REFRESH)"를 쏩니다
+        val intent = Intent(context, NewsWidgetProvider::class.java).apply {
+            action = NewsWidgetProvider.ACTION_REFRESH
+        }
+        context.sendBroadcast(intent)
+
         return Result.success()
     }
 }
