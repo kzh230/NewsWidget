@@ -21,7 +21,7 @@
             android:layout_weight="1"
             android:text="BREAKING NEWS"
             android:textColor="#D97757"
-            android:textSize="11sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
         <!-- Original Colour #888888 -->
 
@@ -41,7 +41,7 @@
             android:id="@+id/btn_open_news"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="뉴스 보기 >"
+            android:text="뉴스 보기 >>"
             android:textColor="#1A73E8"
             android:textSize="12sp"
             android:textStyle="bold"
